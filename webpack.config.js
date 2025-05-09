@@ -1,0 +1,26 @@
+const path = require('path');
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+
+module.exports = {
+    entry: './src/index.js',
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'main.js'
+    },
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader'], // Loads and injects CSS into the DOM
+            },
+        ],
+    },
+    plugins: [
+        new CopyWebpackPlugin({
+            patterns: [{
+                context: __dirname + '/src/',
+                from: '*.html'
+            }]
+        })
+    ]
+};
