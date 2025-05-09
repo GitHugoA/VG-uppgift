@@ -19,6 +19,7 @@ body {
 #quote {
     font-family: "Dancing Script", sans-serif;
     font-size: 40px;
+    overflow: hidden;
 }
 
 #quote-button{
@@ -26,8 +27,14 @@ body {
 	margin-left: 10px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 705px) {
     h1{
         font-size: 75px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    h1{
+        font-size: 65px;
     }
 }
