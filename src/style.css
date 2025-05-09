@@ -1,0 +1,33 @@
+h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    text-shadow: 2px 2px;
+}
+
+body {
+    background-color: #686868;
+}
+
+.card{
+	 min-height: 500px;
+     margin-left: 10px;
+     align-content: center;
+     background-color: #E0E0E0;
+}
+
+#quote {
+    font-family: "Dancing Script", sans-serif;
+    font-size: 40px;
+}
+
+#quote-button{
+    font-family: "Bebas Neue", sans-serif;
+	margin-left: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    h1{
+        font-size: 75px;
+    }
+}
