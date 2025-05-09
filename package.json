@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/GitHugoA/VG-uppgift/issues"
   },
-  "homepage": "https://github.com/GitHugoA/VG-uppgift#readme"
+  "homepage": "https://github.com/GitHugoA/VG-uppgift#readme",
+  "dependencies": {
+    "animejs": "^4.0.2",
+    "axios": "^1.9.0"
+  }
 }
