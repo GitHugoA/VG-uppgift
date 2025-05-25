@@ -1,5 +1,7 @@
 import axios from 'axios';
 import {animate} from 'animejs';
+import $ from 'jquery';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/style.css';
 
 

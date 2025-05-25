@@ -20,7 +20,9 @@
   "homepage": "https://github.com/GitHugoA/VG-uppgift#readme",
   "dependencies": {
     "animejs": "^4.0.2",
-    "axios": "^1.9.0"
+    "axios": "^1.9.0",
+    "bootstrap": "^5.3.6",
+    "jquery": "^3.7.1"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^13.0.0",
