@@ -9,6 +9,7 @@ $("#quote-button").on("click", function(){
     getQuote();
 });
 
+// When button is pressed, fetch quote and animate the text
 function getQuote(){
     axios.get("https://api.kanye.rest/").then(function (response){
         console.log(response.data.quote);
@@ -17,14 +18,18 @@ function getQuote(){
 
         animate('#quote', {
             y: [
+              // Move quote up
               { to: '-2.75rem', ease: 'outExpo', duration: 600 },
+              // Then drop it down with bounce effect
               { to: 0, ease: 'outBounce', duration: 800, delay: 100 }
             ],
             
             rotate: {
+              //Rotate it 360 degrees
               from: '-1turn',
               delay: 0
             },
+            //Do not loop the animation
             delay: (_, i) => i * 50,
             ease: 'inOutCirc',
             loop: false
@@ -34,4 +39,5 @@ function getQuote(){
     });
 }
 
-$(document).ready(getQuote);
+document.addEventListener('DOMContentLoaded', getQuote);
+// Not using JQuery, since ready() function is deprecated
