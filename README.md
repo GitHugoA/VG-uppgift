@@ -2,7 +2,7 @@
 En applikation som visar Kanye West-citat genom animeringar!
 
 ## Using
-[kanye.rest för hämtning av citat](https://kanye.rest/)
+[kanye.rest](https://kanye.rest/) för hämtning av citat
 
 
 ## How to install
